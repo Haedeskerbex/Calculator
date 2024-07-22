@@ -17,6 +17,8 @@ body{
 }
     .result{
       grid-area: 1/1/2/5;
+      display: flex;
+      flex-direction: column;
       justify-self:center;
       align-self:center;
       border: 2px solid black;
@@ -24,18 +26,26 @@ body{
       height: 85%;
       border-radius: 20px;
       background-color: white;
+      overflow:hidden;
+      box-sizing: border-box;
     }
-        #calc,#result{
+      #result{
+
             margin-left:8%;
-            min-height: 1vh;
-            padding-bottom: 1em;
+            white-space: normal;
+            font-size: 50px;
+        }
+      #calc{
+            margin-left:8%;
+            min-height: 0.5vh;
             white-space: normal;
             font-size: 20px;
-        }
+            margin-bottom: 0px;
+      }
 
     .nums{
       width: 9vw;
-      margin-left: 15px;
+      margin-left: 30px;
       margin-bottom: 10px;
       border: none;
       border-radius: 20px;
@@ -53,7 +63,7 @@ body{
 
     }
     .arthmetics{
-      margin-left: 15px;
+      margin-left: 20px;
       width: 6vw;
       padding: 5px;
       border: none;

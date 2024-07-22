@@ -120,3 +120,15 @@ paranthesis.addEventListener('click', (e) => {
         paran = true;
     }
 })
+dot.addEventListener('click', (e) => {
+    if (arth) {
+        calc.innerText += ".";
+        arth = false;
+}
+})
+equals.addEventListener('click',(e) =>{
+    result.innerText=eval(calc.innerText);
+})
+c.addEventListener('click',(e)=>{
+    calc.innerText=calc.innerText.slice(0,-1);
+})
